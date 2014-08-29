@@ -10,6 +10,12 @@
     <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
+    <parent>
+        <groupId>com.productmadness.parentpoms</groupId>
+        <artifactId>Libs</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
     <name>Maven Custom Packaging Artifact Handler Extension</name>
 
     <licenses>
@@ -88,17 +94,6 @@
         <url>scm:git:git@github.com/matyasatpm/custom-packaging-maven-plugin.git</url>
         <developerConnection>scm:git:git@github.com/matyasatpm/custom-packaging-maven-plugin.git</developerConnection>
     </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>sonatype-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-        <snapshotRepository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
 
     <profiles>
         <profile>
