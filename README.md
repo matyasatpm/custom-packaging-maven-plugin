@@ -1,3 +1,6 @@
+Changes from the original lib:
+- The lib supports now .swc files too.
+
 
 The custom-packaging-maven-plugin is aimed to be used in projects where the packaging is handled
 externally, yet you need Maven to install or deploy the artifacts.

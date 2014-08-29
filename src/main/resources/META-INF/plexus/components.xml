@@ -9,7 +9,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -22,7 +22,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -35,7 +35,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -48,7 +48,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -61,7 +61,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -74,7 +74,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -87,7 +87,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -100,7 +100,7 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -113,7 +113,20 @@
             <configuration>
                 <phases>
                     <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
-                    <package>org.carlspring.maven:custom-packaging-maven-plugin:attach-artifact</package>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
+                    <install>org.apache.maven.plugins:maven-install-plugin:install</install>
+                    <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
+                </phases>
+            </configuration>
+        </component>
+        <component>
+            <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+            <role-hint>swc</role-hint>
+            <implementation>org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping</implementation>
+            <configuration>
+                <phases>
+                    <process-resources>org.apache.maven.plugins:maven-resources-plugin:resources</process-resources>
+                    <package>com.productmadness:custom-packaging-maven-plugin:attach-artifact</package>
                     <install>org.apache.maven.plugins:maven-install-plugin:install</install>
                     <deploy>org.apache.maven.plugins:maven-deploy-plugin:deploy</deploy>
                 </phases>
@@ -209,6 +222,16 @@
                 <extension>rar</extension>
                 <type>rar</type>
                 <packaging>rar</packaging>
+            </configuration>
+        </component>
+        <component>
+            <role>org.apache.maven.artifact.handler.ArtifactHandler</role>
+            <role-hint>swc</role-hint>
+            <implementation>org.apache.maven.artifact.handler.DefaultArtifactHandler</implementation>
+            <configuration>
+                <extension>swc</extension>
+                <type>swc</type>
+                <packaging>swc</packaging>
             </configuration>
         </component>
     </components>

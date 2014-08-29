@@ -73,7 +73,7 @@ public class CustomPackagingMojo
 
         project.setArtifact(artifact);
 
-        getLog().info("Attached " + artifact.toString() + ".");
+        getLog().info("Attached " + artifact.getFile() + " to " + artifact.toString());
     }
 
     public String getBasedir()

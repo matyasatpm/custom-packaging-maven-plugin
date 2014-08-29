@@ -1,0 +1,11 @@
+<plugins>
+    <plugin>
+        <groupId>com.productmadness</groupId>
+        <artifactId>custom-packaging-maven-plugin</artifactId>
+        <version>1.0</version>
+        <extensions>true</extensions>
+        <configuration>
+            <artifactPath>${basedir}/test.txt</artifactPath>
+        </configuration>
+    </plugin>
+</plugins>

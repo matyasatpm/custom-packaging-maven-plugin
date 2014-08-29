@@ -12,9 +12,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.carlspring.maven</groupId>
+                <groupId>com.productmadness</groupId>
                 <artifactId>custom-packaging-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0</version>
 
                 <!--declare that this plugin contributes the component extensions-->
                 <extensions>true</extensions>
